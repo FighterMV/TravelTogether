@@ -1,5 +1,7 @@
 package com.rwth.travelTogether.persistence;
 
+import java.util.List;
+
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -25,10 +27,21 @@ public class TestEntityDAOTest extends TestCase {
 	public void testPersist() {
 
 		TestEntity entity = new TestEntity();
-		entity.setTestString("bablabla");
+		entity.setName("test");
 
 		instance.persist(entity);
 
 		assertNotNull(entity.getId());
+
+		TestEntity fetchedEntity = instance.get(entity.getId());
+		assertEquals(entity, fetchedEntity);
+
+		List<TestEntity> searchResult = instance.get("test");
+		assertEquals(1, searchResult.size());
+		assertEquals(entity, searchResult.get(0));
+
+		List<TestEntity> emptyResult = instance.get("doesnotexist");
+		assertEquals(0, emptyResult.size());
+
 	}
 }
