@@ -13,7 +13,7 @@ public class TestEntity {
 	@GeneratedValue(strategy = GenerationType.AUTO)
 	private Long id;
 
-	private String testString;
+	private String name;
 
 	public Long getId() {
 
@@ -25,14 +25,14 @@ public class TestEntity {
 		this.id = id;
 	}
 
-	public String getTestString() {
+	public String getName() {
 
-		return testString;
+		return name;
 	}
 
-	public void setTestString(String testString) {
+	public void setName(String testString) {
 
-		this.testString = testString;
+		this.name = testString;
 	}
 
 }
