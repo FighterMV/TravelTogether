@@ -20,6 +20,18 @@
         <servlet-name>dispatcher</servlet-name>
         <url-pattern>*.htm</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>statCont</servlet-name>
+        <servlet-class>org.apache.catalina.servlets.DefaultServlet</servlet-class>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>statCont</servlet-name>
+        <url-pattern>*.js</url-pattern>
+    </servlet-mapping>
+      
     <session-config>
         <session-timeout>
             30
