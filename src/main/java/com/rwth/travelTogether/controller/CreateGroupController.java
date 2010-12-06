@@ -19,6 +19,8 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.transaction.TransactionConfiguration;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.servlet.mvc.Controller;
 
@@ -34,6 +36,7 @@ public class CreateGroupController{
     private GroupDAO groupDAO;
 
     //We are binding our request into the group instance of Group
+    @Transactional
     @RequestMapping(value = "/createGroup", method = RequestMethod.POST)
         public ModelAndView createGroup(@ModelAttribute("group") Group group, BindingResult result) {
 
