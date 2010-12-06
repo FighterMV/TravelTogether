@@ -1,6 +1,6 @@
 <form method="post" action="createGroup.htm">
 
-    <table id="groups">
+    <table id="groups" class="tablesorter">
       <thead>
         <tr>
           <th>Name</th>
