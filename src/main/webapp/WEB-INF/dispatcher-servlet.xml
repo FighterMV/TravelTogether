@@ -19,6 +19,7 @@
         <property name="mappings">
             <props>
                 <prop key="index.htm">indexController</prop>
+                <prop key="createGroup.htm">createGroupController</prop>
             </props>
         </property>
     </bean>
@@ -36,8 +37,10 @@
           p:viewName="index" />
 
     <bean class="com.rwth.travelTogether.controller.SearchController"/>
-    <bean class="com.rwth.travelTogether.controller.GroupController"/>
+    <bean name="groupController" class="com.rwth.travelTogether.controller.GroupController"/>
     <bean class="com.rwth.travelTogether.controller.MessagesController"/>
     <bean class="com.rwth.travelTogether.controller.LogoutController"/>
+
+    <bean name="createGroupController" class="com.rwth.travelTogether.controller.CreateGroupController"/>
 
 </beans>

@@ -7,7 +7,6 @@ package com.rwth.travelTogether.model;
 
 import java.lang.reflect.Array;
 import java.util.Date;
-import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;

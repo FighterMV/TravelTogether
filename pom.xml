@@ -176,7 +176,17 @@
 			<artifactId>derbyclient</artifactId>
 			<version>SNAPSHOT</version>
 		</dependency>
-		<dependency>
+	 <dependency>
+	  <groupId>org.hibernate</groupId>
+	  <artifactId>hibernate</artifactId>
+	  <version>3.2.5.ga</version>
+	 </dependency>
+	 <dependency>
+	  <groupId>org.hibernate</groupId>
+	  <artifactId>hibernate-entitymanager</artifactId>
+	  <version>3.3.2.GA</version>
+	 </dependency>
+	 <dependency>
 			<groupId>javax</groupId>
 			<artifactId>javaee-web-api</artifactId>
 			<version>6.0</version>

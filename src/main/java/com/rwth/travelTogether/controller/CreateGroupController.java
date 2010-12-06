@@ -13,10 +13,14 @@ import org.springframework.web.bind.annotation.SessionAttributes;
 import com.rwth.travelTogether.model.Group;
 import com.rwth.travelTogether.persistence.GroupDAO;
 import com.rwth.travelTogether.persistence.impl.GroupDAOImpl;
+import java.io.IOException;
 import java.util.Calendar;
-import java.util.Date;
-import javax.xml.crypto.Data;
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.servlet.ModelAndView;
+import org.springframework.web.servlet.mvc.Controller;
 
 /**
  *
@@ -25,13 +29,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 @org.springframework.stereotype.Controller
 @SessionAttributes
 public class CreateGroupController{
-
+    
     @Autowired
     private GroupDAO groupDAO;
 
     //We are binding our request into the group instance of Group
     @RequestMapping(value = "/createGroup", method = RequestMethod.POST)
-        public String createGroup(@ModelAttribute("group") Group group, BindingResult result) {
+        public ModelAndView createGroup(@ModelAttribute("group") Group group, BindingResult result) {
 
         groupDAO = new GroupDAOImpl();
 
@@ -46,6 +50,8 @@ public class CreateGroupController{
             e.printStackTrace();
         }
 
-        return "redirect:groups.htm";
+        ModelAndView modelAndView = new ModelAndView("groups");
+        return modelAndView;
     }
+    
 }
