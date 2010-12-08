@@ -17,7 +17,7 @@
         <decorator:head/>
 
     </head>
-    <body class="bodyArea">
+    <body class="bodyArea" onload="initialize()">
 
 		<div id="mainArea">
 
