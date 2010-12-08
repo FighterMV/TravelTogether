@@ -14,14 +14,7 @@
         <script type="text/javascript" src="<%=request.getContextPath() %>/js/jquery.js"></script>
         <script type="text/javascript" src="<%=request.getContextPath() %>/js/jquery_tablesorter_min.js"></script>
 
-        <script type="text/javascript">
-         /* <![CDATA[ */
-        $(document).ready(function() {
-                $("#groups").tablesorter();
-        });
-        /* ]]> */
-
-        </script>
+        <decorator:head/>
 
     </head>
     <body class="bodyArea">

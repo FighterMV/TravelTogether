@@ -1,3 +1,17 @@
+<head>
+    <script type="text/javascript">
+         /* <![CDATA[ */
+        $(document).ready(function() {
+                $("#groups").tablesorter();
+        });
+        /* ]]> */
+
+        </script>
+</head>
+
+
+<body>
+
 <form method="post" action="createGroup.htm">
 
     <table id="groups" class="tablesorter">
@@ -48,3 +62,5 @@
 </table>
 
 </form>
+
+</body>
