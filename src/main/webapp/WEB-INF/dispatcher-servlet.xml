@@ -20,6 +20,7 @@
             <props>
                 <prop key="index.htm">indexController</prop>
                 <prop key="createGroup.htm">createGroupController</prop>
+                <prop key="map.htm">openMapController</prop>
             </props>
         </property>
     </bean>
@@ -42,5 +43,6 @@
     <bean class="com.rwth.travelTogether.controller.LogoutController"/>
 
     <bean name="createGroupController" class="com.rwth.travelTogether.controller.CreateGroupController"/>
+    <bean name="openMapController" class="com.rwth.travelTogether.controller.MapController"/>
 
 </beans>

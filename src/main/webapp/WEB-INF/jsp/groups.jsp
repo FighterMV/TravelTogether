@@ -63,4 +63,6 @@
 
 </form>
 
+    <a href="map.htm">Open Map</a>
+
 </body>
