@@ -21,6 +21,7 @@
                 <prop key="index.htm">indexController</prop>
                 <prop key="createGroup.htm">createGroupController</prop>
                 <prop key="map.htm">openMapController</prop>
+                <prop key="getGroupsAPI.htm">getGroupsAPIController</prop>
             </props>
         </property>
     </bean>
@@ -44,5 +45,6 @@
 
     <bean name="createGroupController" class="com.rwth.travelTogether.controller.CreateGroupController"/>
     <bean name="openMapController" class="com.rwth.travelTogether.controller.MapController"/>
+    <bean name="getGroupsAPIController" class="com.rwth.travelTogether.controller.GetGroupAPIController"/>
 
 </beans>

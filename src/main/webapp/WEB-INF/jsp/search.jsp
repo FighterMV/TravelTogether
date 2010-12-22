@@ -1,6 +1,5 @@
 <head>
-
-    <script src="http://www.google.com/jsapi" type="text/javascript"></script>
+<script src="http://www.google.com/jsapi" type="text/javascript"></script>
 <script type="text/javascript">
   google.load('search', '1', {language : 'de', style : google.loader.themes.MINIMALIST});
   google.setOnLoadCallback(function() {
@@ -108,16 +107,11 @@
   .gs-promotion.gs-result .gs-visibleUrl-short {
     color: #00CC00;
   }
-</style>
-
+</style> 
 </head>
 
-<body>
-
-<h3>Find user, groups and towns</h3>
-
+<body
+ <h3>Find user, groups and towns</h3>
 <div id="cse-search-form" style="width: 100%;">Loading</div>
-
 <div id="cse" style="width:100%;"></div>
-
 </body>

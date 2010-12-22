@@ -15,4 +15,6 @@ public interface GroupDAO {
         void persist(Group group);
 
 	Group get(Long id);
+
+        String getGroupsAsXML();
 }
