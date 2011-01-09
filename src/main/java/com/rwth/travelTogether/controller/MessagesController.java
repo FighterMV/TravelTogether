@@ -5,20 +5,19 @@
 
 package com.rwth.travelTogether.controller;
 
-import java.io.IOException;
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.Controller;
 
 /**
  *
  * @author marco
  */
-public class MessagesController implements Controller{
-    @Override
-    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
+@Controller
+public class MessagesController {
+
+	@RequestMapping("messages")
+	public ModelAndView showMessages() {
 
         ModelAndView modelAndView = new ModelAndView("messages");
 

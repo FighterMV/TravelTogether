@@ -6,6 +6,7 @@
 package com.rwth.travelTogether.model;
 
 import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.Date;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -83,6 +84,12 @@ public class Group {
         this.name = name;
     }
 
+	@Override
+	public String toString() {
+
+		return "Group [id=" + id + ", name=" + name + ", creationDate=" + creationDate + ", founder=" + founder + ", members=" + Arrays.toString(members)
+				+ ", forumEntries=" + Arrays.toString(forumEntries) + "]";
+	}
     
 
 }

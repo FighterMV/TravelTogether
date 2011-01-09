@@ -136,7 +136,6 @@
 			<groupId>com.h2database</groupId>
 			<artifactId>h2</artifactId>
 			<version>1.2.142</version>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>taglibs</groupId>

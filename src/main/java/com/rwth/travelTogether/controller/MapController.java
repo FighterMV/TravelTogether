@@ -17,7 +17,7 @@ import org.springframework.web.servlet.ModelAndView;
 @Controller
 public class MapController {
 
-    @RequestMapping(value = "/map", method = RequestMethod.GET)
+	@RequestMapping(value = "/map")
     public ModelAndView openMap() {
 
         ModelAndView modelAndView = new ModelAndView("map");

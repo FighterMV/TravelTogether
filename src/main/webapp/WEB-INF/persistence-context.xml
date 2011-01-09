@@ -49,6 +49,7 @@
 
 		<property name="configurationClass" value="org.hibernate.cfg.AnnotationConfiguration" />
 
+		<property name="namingStrategy" ref="namingStrategy"></property>
 		<property name="hibernateProperties">
 
 			<props>
@@ -69,6 +70,6 @@
 		</property>
 	</bean>
 
-
+	<bean class="com.rwth.travelTogether.persistence.UnderscoreNamingStrategy" id="namingStrategy"></bean>
 
 </beans>
