@@ -29,7 +29,6 @@ import org.springframework.web.servlet.mvc.Controller;
  * @author marco
  */
 @org.springframework.stereotype.Controller
-@SessionAttributes
 public class CreateGroupController{
     
     @Autowired
