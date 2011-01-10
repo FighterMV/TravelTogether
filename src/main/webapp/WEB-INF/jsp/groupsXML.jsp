@@ -1,3 +1,3 @@
 <body>
-    <label><pre>${groupsAsXML}</pre></label>
+    <pre>${groupsAsXML}</pre>
 </body>

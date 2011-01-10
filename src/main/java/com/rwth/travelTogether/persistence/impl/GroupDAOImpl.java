@@ -52,23 +52,8 @@ public class GroupDAOImpl implements GroupDAO{
 
     @Override
     public String getGroupsAsXML(){
-        //faking groups atm
-        Group group1 = new Group();
-        group1.setFounder("TestFounder1");
-        group1.setName("TestGroup1");
 
-        Group group2 = new Group();
-        group2.setFounder("TestFounder2");
-        group2.setName("TestGroup2");
-
-        Group group3 = new Group();
-        group3.setFounder("TestFounder3");
-        group3.setName("TestGroup3");
-
-        List<Group> groups = new ArrayList<Group>();
-        groups.add(group1);
-        groups.add(group2);
-        groups.add(group3);
+        List<Group> groups = getGroups();
 
         XMLParser xmlParser = new XMLParser();
         return xmlParser.parseGroupsToXML(groups);

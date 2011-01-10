@@ -12,8 +12,6 @@
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
         <title>Travel Together</title>
 	<link rel="stylesheet" type="text/css" href="<%=request.getContextPath() %>/css/style.css" />
-        <script type="text/javascript" src="<%=request.getContextPath() %>/js/jquery.js"></script>
-        <script type="text/javascript" src="<%=request.getContextPath() %>/js/jquery_tablesorter_min.js"></script>
 
         <decorator:head/>
 

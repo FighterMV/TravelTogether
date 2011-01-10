@@ -28,15 +28,9 @@ public class GetGroupAPIController{
     @RequestMapping(value = "groupAPI", method = RequestMethod.GET)
     public ModelAndView groupAPI(){
 
-        groupDAO = new GroupDAOImpl();
-
         String xml = new String();
-
-        try{
-            xml = groupDAO.getGroupsAsXML();
-        }catch(Error e){
-            e.printStackTrace();
-        }
+        
+        xml = groupDAO.getGroupsAsXML();
 
         ModelAndView modelAndView = new ModelAndView("groupsXML");
         modelAndView.addObject("groupsAsXML", xml);
