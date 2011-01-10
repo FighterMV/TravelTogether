@@ -9,6 +9,7 @@ import com.rwth.travelTogether.persistence.GroupDAO;
 import com.rwth.travelTogether.persistence.impl.GroupDAOImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,6 +24,7 @@ public class GetGroupAPIController{
     @Autowired
     private GroupDAO groupDAO;
 
+    @Transactional
     @RequestMapping(value = "groupAPI", method = RequestMethod.GET)
     public ModelAndView groupAPI(){
 

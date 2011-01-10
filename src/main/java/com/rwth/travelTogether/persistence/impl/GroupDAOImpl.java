@@ -17,6 +17,7 @@ import com.rwth.travelTogether.parser.XMLParser;
 import com.rwth.travelTogether.persistence.GroupDAO;
 import java.util.ArrayList;
 import java.util.List;
+import org.hibernate.Query;
 
 /**
  *
@@ -33,7 +34,7 @@ public class GroupDAOImpl implements GroupDAO{
     @Override
     public void persist(Group group) {
 
-		LOGGER.trace("call to persist group {}", group);
+            LOGGER.trace("call to persist group {}", group);
             Session session = sessionFactory.getCurrentSession();
 
             //hibernate saves the group into the database for us
@@ -71,6 +72,15 @@ public class GroupDAOImpl implements GroupDAO{
 
         XMLParser xmlParser = new XMLParser();
         return xmlParser.parseGroupsToXML(groups);
+    }
+
+    @Override
+    public List<Group> getGroups(){
+        Session session = sessionFactory.getCurrentSession();
+
+        Query query = session.createQuery("from Group");
+
+        return query.list();
     }
 
 }

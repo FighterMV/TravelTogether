@@ -39,9 +39,9 @@ public class CreateGroupController{
         Calendar calendar = Calendar.getInstance();
         group.setCreationDate(calendar.getTime());
 
-		groupDAO.persist(group);
+	groupDAO.persist(group);
 
-        ModelAndView modelAndView = new ModelAndView("groups");
+        ModelAndView modelAndView = new ModelAndView("groupCreated");
         return modelAndView;
     }
     

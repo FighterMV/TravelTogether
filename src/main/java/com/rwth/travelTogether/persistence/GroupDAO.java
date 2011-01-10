@@ -6,6 +6,7 @@
 package com.rwth.travelTogether.persistence;
 
 import com.rwth.travelTogether.model.Group;
+import java.util.List;
 
 /**
  *
@@ -17,4 +18,6 @@ public interface GroupDAO {
 	Group get(Long id);
 
         String getGroupsAsXML();
+
+        List<Group> getGroups();
 }
