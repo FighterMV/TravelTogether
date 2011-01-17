@@ -55,6 +55,6 @@
 
 </form>
 
-    <a href="map.htm">Open Map</a>
+    <a href="http://www.travel-together.org/pres/index.php" target="blank">Open Map</a>
 
 </body>
