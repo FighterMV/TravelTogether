@@ -25,6 +25,8 @@
 			<url>file:${project.basedir}/lib</url>
 		</repository>
 	</repositories>
+
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -217,13 +219,6 @@
 			<scope>test</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.springframework.security</groupId>
-			<artifactId>spring-security-core</artifactId>
-			<version>3.0.2.RELEASE</version>
-			<type>jar</type>
-			<scope>compile</scope>
-		</dependency>
-		<dependency>
 			<groupId>javassist</groupId>
 			<artifactId>javassist</artifactId>
 			<version>3.7.1.GA</version>
@@ -237,6 +232,29 @@
 			<type>jar</type>
 			<scope>compile</scope>
 		</dependency>
+
+                <!--Spring Security-->
+
+                <dependency>
+                    <groupId>org.springframework.security</groupId>
+                    <artifactId>spring-security-core</artifactId>
+                    <version>3.0.2.RELEASE</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.springframework.security</groupId>
+                    <artifactId>spring-security-config</artifactId>
+                    <version>3.0.2.RELEASE</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.springframework.security</groupId>
+                    <artifactId>spring-security-acl</artifactId>
+                    <version>3.0.2.RELEASE</version>
+                </dependency>
+                <dependency>
+                    <groupId>org.springframework.security</groupId>
+                    <artifactId>spring-security-taglibs</artifactId>
+                    <version>3.0.2.RELEASE</version>
+                </dependency>
 	</dependencies>
 	<build>
 		<plugins>

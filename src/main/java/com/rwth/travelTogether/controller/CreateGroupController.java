@@ -18,6 +18,7 @@ import org.springframework.web.servlet.ModelAndView;
 
 import com.rwth.travelTogether.model.Group;
 import com.rwth.travelTogether.persistence.GroupDAO;
+import org.springframework.security.core.context.SecurityContextHolder;
 
 /**
  *
@@ -34,7 +35,9 @@ public class CreateGroupController{
     @RequestMapping(value = "/createGroup", method = RequestMethod.POST)
         public ModelAndView createGroup(@ModelAttribute("group") Group group, BindingResult result) {
 
-        group.setFounder("TestFounder");
+        final String currentUser = SecurityContextHolder.getContext().getAuthentication().getName();
+
+        group.setFounder(currentUser);
 
         Calendar calendar = Calendar.getInstance();
         group.setCreationDate(calendar.getTime());
