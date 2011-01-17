@@ -15,7 +15,6 @@ import org.springframework.stereotype.Repository;
 import com.rwth.travelTogether.model.Group;
 import com.rwth.travelTogether.parser.XMLParser;
 import com.rwth.travelTogether.persistence.GroupDAO;
-import java.util.ArrayList;
 import java.util.List;
 import org.hibernate.Query;
 
@@ -29,7 +28,7 @@ public class GroupDAOImpl implements GroupDAO{
     @Autowired
     private SessionFactory sessionFactory;
 
-	public static final Logger LOGGER = LoggerFactory.getLogger(GroupDAOImpl.class);
+    public static final Logger LOGGER = LoggerFactory.getLogger(GroupDAOImpl.class);
 
     @Override
     public void persist(Group group) {

@@ -19,9 +19,9 @@ public class LogoutController {
 	@RequestMapping("/logout")
 	public ModelAndView logout() {
 
-        ModelAndView modelAndView = new ModelAndView("logout");
+            ModelAndView modelAndView = new ModelAndView("logout");
 
-        return modelAndView;
+            return modelAndView;
 
-    }
+        }
 }

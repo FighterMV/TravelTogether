@@ -30,12 +30,12 @@ public class GroupController {
 	@RequestMapping(value = "groups", method = RequestMethod.GET)
 	public ModelAndView showGroups() {
 
-        List<Group> allGroups = groupDAO.getGroups();
+            List<Group> allGroups = groupDAO.getGroups();
 
-        ModelAndView modelAndView = new ModelAndView("groups");
-        modelAndView.addObject("allGroups", allGroups);
+            ModelAndView modelAndView = new ModelAndView("groups");
+            modelAndView.addObject("allGroups", allGroups);
 
-        return modelAndView;
+            return modelAndView;
 
-    }
+        }
 }

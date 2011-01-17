@@ -30,7 +30,7 @@
 					<span class="mainLink"><a href="profile.htm">Home</a></span>
 					<span class="mainLink"><a href="search.htm">Search</a></span>
 					<span class="mainLink"><a href="groups.htm">Groups</a></span>
-					<span class="mainLink"><a href="messages.htm">Messages</a></span>
+					<span class="mainLink"><a href="messageHeaders.htm">Messages</a></span>
 					<span class="mainLink"><a href="<spring:url value="/j_spring_security_logout" htmlEscape="true" />">Logout</a></span>
 				</div>
 
