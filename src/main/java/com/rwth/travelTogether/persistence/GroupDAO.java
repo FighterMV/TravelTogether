@@ -20,4 +20,6 @@ public interface GroupDAO {
         String getGroupsAsXML();
 
         List<Group> getGroups();
+
+        void deleteGroup(long id);
 }

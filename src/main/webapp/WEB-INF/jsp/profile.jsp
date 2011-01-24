@@ -1,10 +1,11 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <table border="0">
                         	<tr>
                         		<td width="500">
                         			<table border="0">
                         				<tr>
                         					<td><b>Name:</b></td>
-                        					<td>Max Mustermann</td>
+                        					<td><c:out value="${currentUser}"/></td>
                         				</tr>
                         				<tr>
                         					<td><b>Location:</b></td>
@@ -17,7 +18,7 @@
                         			</table>
                         		</td>
                         		<td>
-                                                <img src="images/smiley.gif" width="200" height="200"/><br>
+                                                <img src="images/smiley.png" width="200" height="200"/><br>
 	                        		<img src="images/star.png" width="35" height="35"/>
 	                        		<img src="images/star.png" width="35" height="35"/>
 	                        		<img src="images/star.png" width="35" height="35"/>

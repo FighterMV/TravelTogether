@@ -2,8 +2,8 @@
 
 <center>
     <br>
-    <a href="messageHeaders.html">Received messages</a> |
-    <a href="writeMessageForm.html">Compose new message</a>
+    <a href="messageHeaders.htm">Received messages</a> |
+    <a href="writeMessageForm.htm">Compose new message</a>
     <br><br><br>
             <c:forEach var="myMessage" items="${allMessages}">
                 <hr/>

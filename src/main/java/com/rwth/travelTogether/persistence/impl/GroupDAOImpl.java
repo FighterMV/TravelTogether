@@ -67,4 +67,13 @@ public class GroupDAOImpl implements GroupDAO{
         return query.list();
     }
 
+    @Override
+    public void deleteGroup(long id){
+        Session session = sessionFactory.getCurrentSession();
+
+        Group group = get(id);
+
+        session.delete(group);
+    }
+
 }
